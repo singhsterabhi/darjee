@@ -1,0 +1,16 @@
+{
+  "name": "darjeetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^1.7.9",
+    "electron-reload": "^1.2.2",
+    "jquery": "^3.2.1"
+  }
+}

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Manual</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="node_modules/xel/stylesheets/material.theme.css"> -->
+	<link rel="stylesheet" type="text/css" href="semantic/out/semantic.min.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="semantic/out/semantic.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link rel="stylesheet" type="text/css" href="./css/styling.css">
+	<script src="index.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+
+<body>
+	<div class="window" align="center">
+
+		<div class="header" align="center">
+			<h1>Manual Controls</h1>
+		</div>
+		<div class="main">
+			<div class="commandpannel">
+
+				<div class="toppanel">
+
+					<div class="xymotion">
+						<h3>X-Y Motion</h3>
+						<div class="xytop">
+							<div class="movement">
+								<div class="motion">
+									<div class="ui black top attached button">
+										<i class="angle double up icon"></i>
+									</div>
+									<div class="ui black bottom attached button" style="border-bottom-left-radius: 0!important;border-bottom-right-radius: 0!important;">
+										<i class="angle up icon"></i>
+									</div>
+									<div class="ui icon buttons">
+										<button class="ui black button">
+							    <i class="angle double left icon" style="margin-top: -5px!important;"></i>
+							  </button>
+										<button class="ui black button">
+							    <i class="angle left icon"  style="margin-top: -5px!important;"></i>
+							  </button>
+										<button class="ui black button">&nbsp;</button>
+										<button class="ui black button">
+							    <i class="angle right icon" style="margin-top: -5px!important;"></i>
+							  </button>
+										<button class="ui black button">
+							    <i class="angle double right icon" style="margin-top: -5px!important;"></i>
+							  </button>
+									</div>
+									<div class="ui black top attached button" style="border-top-left-radius: 0!important;border-top-right-radius: 0!important; margin-top:-2px;">
+										<i class="angle down icon"></i>
+									</div>
+									<div class="ui black bottom attached button">
+										<i class="angle double down icon"></i>
+									</div>
+								</div>
+								<div class="home">
+									<button class="mini compact black ui button">X Home</button><br>
+									<button class="mini ui black compact icon button">
+							  <i class="home icon" style="margin-top: -5px!important;"></i>
+							</button><br>
+									<button class="mini compact black ui button">Y Home</button>
+								</div>
+							</div>
+							<div class="motorpos">
+								<h3>Current Position</h3>
+								<div class="ui right labeled input xpos">
+									<label for="amount" class="ui black label">X:</label>
+									<input type="text" placeholder="Amount" id="amount" autocomplete="off">
+									<div class="ui basic black label">mm</div>
+								</div>
+								<div class="ui right labeled input ypos">
+									<label for="amount" class="ui black label">Y:</label>
+									<input type="text" placeholder="Amount" id="amount" autocomplete="off">
+									<div class="ui basic black label">mm</div>
+								</div>
+							</div>
+						</div>
+						<div class="xybottom">
+							<div class="moveto">
+								<h3>Move To</h3>
+								<div class="ui mini right labeled input xpos">
+									<label for="amount" class="ui black label">X:</label>
+									<input type="text" placeholder="Amount" id="amount" autocomplete="off">
+									<div class="ui basic black label">mm</div>
+								</div>
+								<div class="ui mini right labeled input ypos">
+									<label for="amount" class="ui black label">Y:</label>
+									<input type="text" placeholder="Amount" id="amount" autocomplete="off">
+									<div class="ui basic black label">mm</div>
+								</div>
+							</div>
+							<div class="moveby">
+								<h3>Move By</h3>
+								<div class="ui mini right labeled input xpos">
+									<label for="amount" class="ui black label">X:</label>
+									<input type="text" placeholder="Amount" id="amount" autocomplete="off">
+									<div class="ui basic black label">mm</div>
+								</div>
+								<div class="ui mini right labeled input ypos">
+									<label for="amount" class="ui black label">Y:</label>
+									<input type="text" placeholder="Amount" id="amount" autocomplete="off">
+									<div class="ui basic black label">mm</div>
+								</div>
+							</div>
+							<div class="send">
+								<button class=" compact positive ui button">SEND</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="arm">
+						<h3>Arm Control</h3>
+						<table>
+							<tr>
+								<th class='firstcol'></th>
+								<th class="currpos">Current Position</th>
+								<th>Move To</th>
+								<th>Move By</th>
+								<th>Control</th>
+							</tr>
+							<tr>
+								<td class='firstcol'>Plate Servo</td>
+								<td class="currpos">
+									<div class="ui mini input ">
+										<input type="text">
+									</div>
+								</td>
+								<td class="servomoveto">
+									<div class="ui mini input ">
+										<input type="text">
+									</div><br>
+									<button class="mini black ui button">
+								  SEND
+								</button>
+								</td>
+								<td class="servomoveby">
+									<div class="ui mini input ">
+										<input type="text">
+									</div><br>
+									<button class="mini black ui button">
+								  SEND
+								</button>
+								</td>
+								<td class="lastcol">
+									<div class="ui icon buttons">
+										<button class="ui  black compact button"><i class="angle double left icon" style="margin-top: -12px!important;"></i></button>
+										<button class="ui  black compact button"><i class="angle left icon" style="margin-top: -12px!important;"></i></button>
+										<button class="ui  black compact button"><i class="angle right icon" style="margin-top: -12px!important;"></i></button>
+										<button class="ui  black compact button"><i class="angle double right icon" style="margin-top: -12px!important;"></i></button>
+									</div><br>
+									<button class="ui compact black icon button">
+								  <i class="home icon"></i>
+								</button>
+								</td>
+							</tr>
+							<tr>
+								<td class='firstcol'>Link Servo</td>
+								<td class="currpos">
+									<div class="ui mini input ">
+										<input type="text">
+									</div>
+								</td>
+								<td class="servomoveto">
+									<div class="ui mini input ">
+										<input type="text">
+									</div><br>
+									<button class="mini ui black button">
+								  SEND
+								</button>
+								</td>
+								<td class="servomoveby">
+									<div class="ui mini input ">
+										<input type="text">
+									</div><br>
+									<button class="mini black ui button">
+								  SEND
+								</button>
+								</td>
+								<td class="lastcol">
+									<div class="ui icon buttons">
+										<button class="ui  black compact button"><i class="angle double left icon" style="margin-top: -12px!important;"></i></button>
+										<button class="ui  black compact button"><i class="angle left icon" style="margin-top: -12px!important;"></i></button>
+										<button class="ui  black compact button"><i class="angle right icon" style="margin-top: -12px!important;"></i></button>
+										<button class="ui  black compact button"><i class="angle double right icon" style="margin-top: -12px!important;"></i></button>
+									</div><br>
+									<button class="ui compact black icon button">
+								  <i class="home icon"></i>
+								</button>
+								</td>
+							</tr>
+							<tr>
+								<td class='firstcol'>End Effector Servo</td>
+								<td class="currpos">
+									<div class="ui mini input ">
+										<input type="text">
+									</div>
+								</td>
+								<td class="servomoveto">
+									<div class="ui mini input ">
+										<input type="text">
+									</div><br>
+									<button class="mini black ui button">
+								  SEND
+								</button>
+								</td>
+								<td class="servomoveby">
+									<div class="ui mini input ">
+										<input type="text">
+									</div><br>
+									<button class="mini black ui button">
+								  SEND
+								</button>
+								</td>
+								<td class="lastcol">
+									<div class="ui icon buttons">
+										<button class="ui  black compact button"><i class="angle double left icon" style="margin-top: -12px!important;"></i></button>
+										<button class="ui  black compact button"><i class="angle left icon" style="margin-top: -12px!important;"></i></button>
+										<button class="ui  black compact button"><i class="angle right icon" style="margin-top: -12px!important;"></i></button>
+										<button class="ui  black compact button"><i class="angle double right icon" style="margin-top: -12px!important;"></i></button>
+									</div><br>
+									<button class="ui compact black icon button">
+								  <i class="home icon"></i>
+								</button>
+								</td>
+							</tr>
+						</table>
+						<div class="force">
+							<div class="ui labeled mini input">
+								<div class="ui black label">
+									Force
+								</div>
+								<input type="text" placeholder="">
+							</div>
+							<button class="mini ui black button">
+						  SEND
+						</button>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="bottompanel">
+
+					<div class="ledcontrol">
+						<h3>LED Control</h3>
+						<div class="detectcolor">
+							<h5>Detect Color</h5>
+							<div class="rgbndisplay">
+								<div class="rgb">
+									<div class="ui mini labeled input">
+										<div class="ui black label">
+											R
+										</div>
+										<input type="text" placeholder="">
+									</div>
+									<div class="ui mini labeled input">
+										<div class="ui black label">
+											G
+										</div>
+										<input type="text" placeholder="">
+									</div>
+									<div class="ui mini labeled input">
+										<div class="ui black label">
+											B
+										</div>
+										<input type="text" placeholder="">
+									</div>
+								</div>
+								<div class="rgbcolor">
+								</div>
+							</div>
+							<button class=" ui mini black button" style="width:95%;">Detect</button>
+						</div>
+						<div class="displaycolor">
+							<h5>Display Color</h5>
+							<div class="rgbndisplay">
+								<div class="rgb">
+									<div class="ui mini labeled input">
+										<div class="ui black label">
+											R
+										</div>
+										<input type="text" placeholder="">
+									</div>
+									<div class="ui mini labeled input">
+										<div class="ui black label">
+											G
+										</div>
+										<input type="text" placeholder="">
+									</div>
+									<div class="ui mini labeled input">
+										<div class="ui black label">
+											B
+										</div>
+										<input type="text" placeholder="">
+									</div>
+								</div>
+								<div class="rgbcolor">
+
+								</div>
+							</div>
+							<button class="ui mini compact black button">Off</button>
+							<button class="ui mini compact black button">Inverse</button>
+							<button class="ui mini compact black button">Display</button>
+						</div>
+					</div>
+
+					<div class="group1">
+						<div class="subgroup1">
+
+							<div class="vacuumcontrol">
+								<h3>Vacuum Control</h3>
+								<div class="pump">
+									<h5>Pump</h5>
+									<button class="ui mini compact black button">Off</button>
+								</div>
+								<div class="release">
+									<h5>Release</h5>
+									<button class="ui mini compact black button">Off</button>
+								</div>
+								<div class="pressure">
+									<h5>Pressure</h5>
+									<div class="ui action mini input">
+										<input type="text" placeholder="">
+										<button class="ui mini black button">Read</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="needle">
+								<h3>Needle Control</h3>
+								<button class="ui mini compact black button">Stitch</button>
+								<button class="ui mini compact black button">Up</button>
+								<button class="ui mini compact black button">Down</button>
+							</div>
+
+						</div>
+						<div class="reloadgroup">
+							<div class="subgroup2">
+
+								<button class="ui mini compact black button">Reload</button>
+								<button class="ui mini compact black button">Home</button>
+
+							</div>
+							<div class="ui action mini input">
+								<input type="text" placeholder="">
+							</div>
+							<button class="ui mini black button" style="margin-top:3px;">Check Status</button>
+
+						</div>
+					</div>
+
+					<div class="camera">
+						<h3>Camera</h3>
+						<div id="cam"></div>
+					</div>
+
+					<div class="serial">
+						<div class="seraildisplay">
+							<h3>Serial Monitor</h3>
+							<div class="console"></div>
+						</div>
+						<!-- <div class="serialsend"> -->
+						<div class="ui action mini input serialsend" >
+							<input type="text" placeholder="">
+							<button class="ui mini black button" onclick="serialsend()">Read</button>
+						</div>
+						<!-- </div> -->
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="footer">
+			<!-- <p>Samshek Fashion Pvt. Ltd.</p> -->
+			<!-- <x-button toggled class="about" >
+	      <x-box>
+	        <span><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+	        <x-label>About</x-label>
+	      </x-box>
+	    </x-button> -->
+		</div>
+	</div>
+
+	</div>
+
+</body>
+
+</html>

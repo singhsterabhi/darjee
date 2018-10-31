@@ -1,0 +1,33 @@
+body{
+	margin: 0;
+}
+.window {
+  /*background: #fff;*/
+  background-image: linear-gradient(360deg, #2196f3 0%, #a3f7ad 95%);
+  height: 100vh;
+}
+
+::selection {
+  color: yellow;
+  background: #333;
+}
+
+h1, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+h3{
+	text-decoration: underline;
+}
+
+
+.main {
+  min-height: 90vh;
+  background: #fff;
+  border-radius: 8px;
+  width: calc( 100vw - 15px);
+  padding-top: 5px;
+	padding-bottom: 5px;
+  /*box-shadow: 2px 2px 2px #fff;*/
+}

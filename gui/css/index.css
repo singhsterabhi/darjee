@@ -1,0 +1,342 @@
+p {
+  /*font-family: noto;*/
+  font-weight: 300;
+  font-size: 2em;
+  font-stretch: ultra-expanded;
+  margin: 0;
+  padding-top: 30px;
+}
+
+
+.commandpannel {
+  margin-top: 10px;
+  width: calc( 100vw - 40px);
+  /*display: flex;
+  justify-content: space-around;*/
+}
+
+.toppanel, .bottompanel {
+  width: calc( 100vw - 40px);
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5px;
+}
+
+.toppanel>div{
+  background-color: #eee;
+  border: 1px #000 solid;
+  border-radius: 5px;
+  width: 50%;
+  padding: 10px;
+  margin-right: 5px:
+}
+
+/*.commandpannel>div{
+  display: block;
+}*/
+
+.xymotion {
+  margin-right: 5px;
+}
+
+.motion>div, .motion button {
+  height: 25px!important;
+  width: 25px!important;
+  padding: 0!important;
+}
+
+i {
+  margin: 0!important;
+  line-height: 25px!important;
+}
+
+.motion button i {
+  margin-top: -5px!important;
+}
+
+.motion .buttons {
+  display: inline;
+}
+
+.motion .middle {
+  display: flex;
+  width: 200px!important;
+}
+
+.motion {
+  background: #1b1c1d;
+  width: 135px;
+  height: 135px;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.movement {
+  display: inline-flex;
+  border: 1px #000 solid;
+  padding: 6px;
+  margin-right: 5px;
+  /*overflow: hidden;*/
+}
+
+.home {
+  display: grid;
+  width: 90px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /*margin: 10px;*/
+}
+
+.motorpos {
+  /*display: grid;*/
+  border: 1px #000 solid;
+  padding: 6px;
+  width: 45%;
+  /*text-align: center;*/
+}
+
+.motorpos>div input {
+  max-width: 40%!important;
+}
+
+.motorpos>div label {
+  width: 15%!important;
+}
+
+.motorpos>div {
+  margin: 7px 8%;
+}
+
+/*.motorpos > h3{
+  margin-left: 0 -50%!important;
+}*/
+
+.xytop {
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.xybottom {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+
+.moveto, .moveby {
+  border: 1px #000 solid;
+  margin-right: 5px;
+  width: 40%;
+}
+
+.send {
+  /*border: 1px #000 solid;*/
+}
+
+.send {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*.send button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}*/
+
+.moveto>div input, .moveby>div input {
+  max-width: 35%!important;
+}
+
+.moveto>div, .moveby>div {
+  margin: 2px 8%;
+}
+
+.moveto>div label, .moveby>div label {
+  width: 15%!important;
+}
+
+.arm>table {
+  width: 95%;
+  /*height: 90%;*/
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table>td, table>th {
+  display: flex;
+}
+
+td>div {
+  width: 60px!important;
+  height: 20px!important;
+}
+
+table{
+  margin-bottom: 5px;
+}
+
+/*.servomoveto{
+
+  position: relative;
+}
+.servomoveto> div, .servomoveto>button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}*/
+
+.servomoveto, .servomoveby, .currpos, .lastcol {
+  display: table-cell;
+  text-align: center;
+}
+
+.firstcol {
+  width: 80px!important;
+}
+
+.currpos, .servomoveto, .servomoveby {
+  width: 80px!important;
+}
+
+.lastcol>div {
+  margin-left: -50%!important;
+}
+/*
+.lastcol i{
+  margin-top: -12px!important;
+  color: yellow!important;
+}*/
+
+.ledcontrol,.vacuumcontrol,.needle,.camera,.serial,.reloadgroup{
+  background-color: #eee;
+  border: 1px #000 solid;
+  border-radius: 5px;
+  width: 50%;
+  padding: 10px;
+  /*margin-right: 5px:*/
+}
+
+.ledcontrol {
+  width: 30vw!important;
+}
+
+.ledcontrol>div{
+  margin-bottom: 2px;
+}
+.displaycolor, .detectcolor  {
+  background-color: #eee;
+  border: 1px #000 solid;
+  /*border-radius: 5px;*/
+  padding: 3px 8px;
+  text-align: center;
+}
+
+
+.rgbndisplay {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rgb {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1px;
+  width: 50%
+}
+
+.rgbcolor {
+  width: 48%;
+  height: 90px;
+  margin-left: 20px;
+  background-color: #fff;
+  border: 1px #000 solid;
+  /*border-radius: 2px;*/
+}
+
+.rgb>div {
+  width: 60px;
+  margin-bottom: 1px;
+}
+
+.vacuumcontrol {
+  width: 12vw!important;
+}
+
+.pump, .release, .pressure {
+  border: 1px #000 solid;
+  /*border-radius: 5px;*/
+  padding: 2px;
+}
+
+.pressure>div {
+  width: 58px;
+}
+
+.pressure {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.pressure>div{
+  margin-bottom: 5px!important;
+}
+
+.pump, .release {
+  display: flex;
+  justify-content: space-around;
+}
+
+.needle {
+  width: 8vw!important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.needle button {
+  /*margin-bottom: 2px!important;*/
+}
+
+.subgroup1{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.reloadgroup{
+  width: 15vw!important;
+}
+
+.subgroup2{
+  margin-bottom: 3px;
+}
+
+.console {
+  background-color: #333;
+  height: 40vh;
+  /*width: calc( 100vw - 40px);*/
+  border-radius: 5px;
+}
+
+.serialsend{
+  width: 98%;
+  margin-top: 5px;
+}
+
+#cam{
+  /* background-color: #333; */
+  height: 50vh;
+  width: 100%;
+  /*width: calc( 100vw - 40px);*/
+  border-radius: 5px;
+  /* border: solid black 1px; */
+}
